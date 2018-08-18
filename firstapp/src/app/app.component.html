@@ -40,5 +40,8 @@
   </mat-card-actions>
 </mat-card>
 
-<h1>Connect api {{empdetails}}</h1>
+<h1>Connect api</h1>
+<ul *ngFor="let emp of empdetails">
+  <li>{{emp.title}}</li>
+</ul>
 

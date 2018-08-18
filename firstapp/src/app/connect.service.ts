@@ -7,7 +7,7 @@ export class ConnectService {
   private _url:string = "apiData/empData.json";
   constructor(private _http:Http) { }
   gerData(){
-    return this._http.get(this._url).map((response:Response)=>response.json); 
+    return this._http.get("https://jsonplaceholder.typicode.com/posts").map((response:Response)=>response.json()); 
   }
 
 }

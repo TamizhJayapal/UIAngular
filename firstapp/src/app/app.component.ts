@@ -8,7 +8,7 @@ import { ConnectService } from './connect.service';
   providers : [ConnectService]
 })
 export class AppComponent {
-  empdetails:any;
+  empdetails:any=[];
   title = 'app';
   constructor(private _ConnectService:ConnectService){}
   login(){
