@@ -4,44 +4,13 @@
 
     <span class="example-spacer"></span>
     
-    <button mat-button>About</button>
-    <button mat-button>Services</button>
+    <a routerLink="/home" routerLinkActive="active" style="color: white;"><button mat-button>Home</button></a>
+    <a routerLink="/service" style="color: white;"><button mat-button>Services</button></a>
     <button mat-button>Contact</button>
-    <button mat-button>SignIn</button>
-    <button mat-button>SignUp</button>
+    <a routerLink="/signin" style="color: white;"><button mat-button>SignIn</button></a>
+    <a routerLink="/signup" style="color: white;"><button mat-button>SignUp</button></a>
   </mat-toolbar-row>
 </mat-toolbar>
+<router-outlet></router-outlet>
 
-
-<mat-card class="example-card">
-  <mat-card-header>
-    <mat-card-title>Login</mat-card-title>
-  </mat-card-header>
-  <mat-card-content>
-    <form class="example-form">
-      <table class="example-full-width" cellspacing="0">
-        <tr>
-          <td>
-            <mat-form-field class="example-full-width">
-            <input matInput placeholder="Username" name="username" required>
-            </mat-form-field>
-          </td>
-        </tr>
-        <tr>
-        <td><mat-form-field class="example-full-width">
-          <input matInput placeholder="Password" type="password" name="password" required>
-        </mat-form-field></td>
-      </tr></table>
-    </form>
-    
-  </mat-card-content>
-  <mat-card-actions>
-    <button mat-raised-button (click)="login()" color="primary">Login</button>
-  </mat-card-actions>
-</mat-card>
-
-<h1>Connect api</h1>
-<ul *ngFor="let emp of empdetails">
-  <li>{{emp.title}}</li>
-</ul>
 
